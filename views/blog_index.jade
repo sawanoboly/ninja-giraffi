@@ -1,0 +1,10 @@
+h1= title
+
+table
+  tr
+    th= "Title"
+    th= "Body"
+  each blog in blogs
+    tr
+      td #{blog.title}
+      td #{blog.body}

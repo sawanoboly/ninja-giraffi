@@ -1,0 +1,13 @@
+h1= title
+
+form(method="post", action="/blogs")
+  fieldset
+    legend Post
+    p
+      label(for="blog[title]") Title
+        input(type="text", name="blog[title]")
+    p
+      label(for="blog[body]") Body
+        input(type="text", name="blog[body]")
+    p
+      input(type="submit", value="Save")
